@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #c8dacb;
+
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 80px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.points__inner{
+    text-align: center;
+}
+
+.points__text{
+    margin-bottom: 15px;
+}
+
+.points__add-area{
+    border: 1px solid #162341;
+    border-radius: 3px;
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.points__add-submit{
+    border: 1px solid #162341;
+    background-color: #8bcea1;
+    font-size: 12px;
+    line-height: 14px;
+    color: #133a3a;
+    padding: 10px 14px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.points__add-submit:hover{
+    transform: scale(1.02);
+    transition: all 0.08s;
+}
+
+.points__list-inner{
+    max-width: 540px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.point__done{
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 4px 2px rgba(122,122,122,0.5);
+}
+
+.points__list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.point__list-textpoint{
+    font-size: 16px;
+}
+
+.point__delete{
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    border: none;
+}
+
+.point__delete-img{
+    width: 25px;
+    height: 25px;
+}
+
+.point__delete-img:hover{
+    transform: scale(1.12);
+    transition: all 0.2s;
+}
+
+.point__list-textpoint{
+    position: relative;
+}
+
+.line{
+    transition: 0.5s all;
+}
+
+.line::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #194e19;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: 0.5s all;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
